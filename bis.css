@@ -1,0 +1,110 @@
+/* config des styles */
+:root{
+    --margaret: 'Margaret', sans-serif;
+    --gotham: 'Gotham-bold', sans-serif;
+    --blanc: #ffffff;
+    --black: rgb(0, 0, 0);
+    --nero: #f3ebebd5;
+    --transition: all 0.4s ease;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--gotham);
+}
+body{
+    color: rgb(144, 29, 179);
+    line-height: 1.5;
+    background: var(--black);
+    overflow-x: hidden;
+}
+
+a{
+    color: rgb(151, 0, 197);
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    display: block;
+}
+ul li{
+    list-style-type: none;
+}
+h1, h2, h3, h4, h5, h6, p{
+    padding: 10px;
+}
+
+/* bouton */
+.btn{
+    border: none;
+    margin: 34px;
+    border-radius: 35px;
+    background: var(--blanc);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 16px 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: inline-block;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.btn:hover{
+    opacity: 0.7;
+}
+
+.texte{
+    font-size: 17px;
+    color: #ffffff;
+    line-height: 1.7;
+}
+
+/* titre */
+.titre{
+    position: relative;
+}
+.titre > h2{
+    font-size: 48px;
+    font-family: var(--margaret);
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 900;
+    color: var(--nero);
+}
+.titre div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+.container{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 500px){
+    .titre > h2{
+        font-size: 96px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .container{
+        width: 88vw;
+    }
+}
+@media screen and (min-width: 1200px){
+    .container{
+        width: 85vw;
+    }
+}
+
+/* animation */
+.resize-animation *{
+    animation: none !important;
+    transition: none !important;
+}
+
